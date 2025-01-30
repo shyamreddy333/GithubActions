@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: print
         run: |
-           touch shyam.sh > it is working as expected
+           touch shyam.sh
+           echo "It is working as expected" > shyam.sh
+           cat shyam.sh
            cat shyam.sh 
       
