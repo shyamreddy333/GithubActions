@@ -1,0 +1,22 @@
+name: test the trigger
+on: 
+  push:
+    branches:
+      main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "echoing the name "$NAME""
+    env:
+      NAME: Mona
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: |
+           touch shyam.sh > it is working as expected
+           cat shyam.sh 
+      
